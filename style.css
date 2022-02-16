@@ -204,7 +204,7 @@
     }
     .description-block{
       width: 100%;
-      padding-left: 0px;
+      margin-left: 0px;
     }
     button:last-of-type{
       margin-top: auto;
