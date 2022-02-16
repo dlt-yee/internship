@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-}
+  }
   body {
     font-family: Roboto, sans-serif;
     font-size: 16px;
@@ -16,9 +16,6 @@
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
     background: #fff;
   }
-  button:last-of-type{
-    margin-top: auto;
-  }
   hr {
     margin: 1rem 0;
   }
@@ -27,14 +24,12 @@
   ul {
     line-height: 1.7;
   }
-  
   h1 {
     font-weight: 500;
     line-height: 1.45;
     font-size: 2.2rem;
     font-weight: 600;
   }
-  
   .btn-add {
     color:#11cdef;
     position: relative;
@@ -54,13 +49,11 @@
     border: 1px solid #11cdef;
     padding: 0.5rem 1.5rem;
   }
-  
   .btn-add:hover {
     cursor: pointer;
     opacity: 0.5;
   }
-  
-  .btn-block{
+  .btn-block {
     display: flex;
     flex-direction: row;
   }
@@ -81,11 +74,10 @@
     align-items: center;
     outline: none;
   }
-  .btn-delete:hover, .btn-edit:hover{
+  .btn-delete:hover, .btn-edit:hover {
     background-color: rgba(211, 209, 209, 0.75);
   }
   .btn-edit {
-    color: #fff;
     display: flex;
     align-items: center;
     padding-left: 7px;
@@ -95,11 +87,14 @@
     cursor: pointer;
     transition: all 0.22s;
   }
-  .miniicon-delete{
+  button:last-of-type{
+    margin-top: auto;
+  }
+  .miniicon-delete {
     width: 30px;
     height: 30px;
   }
-  .miniicon-edit{
+  .miniicon-edit {
     color: #11cdef;
     width: 30px;
     height: 30px;
@@ -108,7 +103,6 @@
     margin: 0 auto;
     max-width: 1000px;
   }
-  
   .task-input {
     display: flex;
     flex-direction: row;
@@ -116,7 +110,6 @@
     justify-content: space-between;
     margin-bottom: 10px;
   }
-  
   .task-input input {
     margin: 0;
     outline: none;
@@ -129,84 +122,75 @@
     font-size: 1rem;
     margin-right: 20px;
   }
-  
   .task-input input:active,
   .task-input input:focus {
     transition: border 0.1s;
     border-bottom: 2px solid #0ca1bb;
   }
-
-  .task-block{
+  .task-block {
     display: flex;
     flex-direction: row;
     width: 100%;
   }
-  
   .list {
     margin: 0;
     padding: 0;
     list-style: none;
   }
-  
   .list-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 0;
   }
-  
-  .title-block{
+  .title-block {
     overflow: hidden;
     margin-left: 5px;
     width: 40%;
   }
-
-  .description-block{
+  .description-block {
     overflow: hidden;
     width: 51%;
     margin-left: 22px
   }
-
   .title {
     word-break: break-all;
   }
-  
   .description {
     word-break: break-all;
   }
 
-  @media screen and (max-width:900px){
-    .container{
+  @media screen and (max-width:965px){
+
+    .container {
       width: 100%;
       height: 100%;
     }
-    .card{
+    .card {
       width: 100%;
       max-height: fit-content;
     }
-    .task-input{
+    .task-input {
       flex-direction: column;
     }
     .task-input input {
       width: 100%;
     }
-    .btn-add-container{
+    .btn-add-container {
       margin-top: 10px;
     }
-    .task-block{
+    .task-block {
       display: flex;
       flex-direction: column;
       width: 100%;
     }
-    .title-block{
+    .title-block {
       margin-left: 0px;
       width: 100%;
     }
-    .description-block{
+    .description-block {
       width: 100%;
       margin-left: 0px;
     }
-    button:last-of-type{
-      margin-top: auto;
-    }
+
   }
